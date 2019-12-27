@@ -1,11 +1,14 @@
 ls
-cd "Copy the directory here"
+cd "Copy the directory here under quote=true"
 git init
-git remote add origin [gitLink]
+git remote add origin "gitLink without the quote"
 git remote -v
 git add .
 git commit -m "First commit"
 git push origin master
+
+**fatal: remote origin already exists.
+**solution: git remote rm origin
 
 ls- List all the files in the current directory
 
